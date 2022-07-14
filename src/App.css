@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins:wght@300&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.demo {
+  background: linear-gradient(90deg, transparent 1%, rgba(249,238,6,1) 188%);
+  clip-path: polygon(0 100%, 0 0, 100% 32%, 100% 63%);
+}
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(-359deg);
+  }
+}
+@keyframes rotate {
+  from {
+      -webkit-transform: rotate(-180deg);
+  }
+  to {
+      -webkit-transform: rotate(-549deg);
+  }
+}
+@keyframes coins {
+  50% {
+    transform: translateY(30px);
+  }
+}
+@keyframes coin {
+  from {
+      transform: translateY(160px);
+  }
+  to {
+    transform: translateY(0px);
+}
+}

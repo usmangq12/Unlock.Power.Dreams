@@ -1,0 +1,13 @@
+export { default as Logo } from "./Logo.png";
+export { default as Bulb } from "./Bulb.png";
+export { default as Background } from "./Background.png";
+export { default as Coin } from "./Coin.png";
+export { default as Torch } from "./Torch.png";
+export { default as Plane } from "./Plane.png";
+export { default as coinLeft } from "./coinLeft.png";
+export { default as coinRight } from "./coinRight.png";
+export { default as topStars } from "./topStars.png";
+export { default as whiteStar } from "./whiteStar.png";
+export { default as yellowStar } from "./yellowStar.png";
+export { default as blueStar } from "./blueStar.png";
+export { default as greenStar } from "./greenStar.png";
