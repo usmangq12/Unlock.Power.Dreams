@@ -13,7 +13,6 @@ import {
   Logo,
   Bulb,
   Coin,
-  Torch,
   Plane,
   coinLeft,
   coinRight,
@@ -25,6 +24,7 @@ import {
 import TodayIcon from "@mui/icons-material/Today";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { styled } from "@mui/material/styles";
+import { Torch } from "./Torch";
 
 const Img = styled(CardMedia)(({ theme }) => ({
   maxWidth: "100%",
@@ -33,31 +33,8 @@ const Img = styled(CardMedia)(({ theme }) => ({
 
 export const Game = () => {
   return (
-    <Grid
-      container
-      pt={5.5}
-      position={"relative"}
-      overflow={"hidden"}
-      sx={{
-        "&:before, &:after": {
-          position: "absolute",
-          content: '""',
-          width: "100%",
-          height: "100%",
-          background: `url(${Torch})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          zIndex: "-1",
-          transformOrigin: "center bottom",
-        },
-        "&:before": {
-          animation: "rotation 5s infinite linear",
-        },
-        "&:after": {
-          animation: "rotate 5s infinite linear",
-        },
-      }}
-    >
+    <Grid container pt={5.5} position={"relative"} overflow={"hidden"}>
+      <Torch />
       <Grid
         container
         px={{ xs: 2.4, sm: 13 }}
@@ -317,11 +294,29 @@ export const Game = () => {
           sx={{
             lineHeight: 0,
             position: "relative",
-            top: { xs: "14px", sm: "60px" },
             animation: "coin 1s linear",
           }}
         >
-          <img src={Coin} alt="" style={{ maxWidth: "100%" }} />
+          <Img component="img" src={Coin} alt="" />
+          <Img
+            component="img"
+            src={whiteStar}
+            alt=""
+            sx={{
+              position: "absolute",
+              top: { xs: "20px", sm: "-70px" },
+              left: 0,
+            }}
+          ></Img>
+          <Img
+            component="img"
+            src={yellowStar}
+            sx={{
+              position: "absolute",
+              bottom: 40,
+              left: 0,
+            }}
+          ></Img>
           <Grid
             sx={{
               position: "absolute",
@@ -331,13 +326,13 @@ export const Game = () => {
               animation: "coins 3s infinite linear",
             }}
           >
-            <img
+            <Img
+              component="img"
               src={coinLeft}
               alt=""
-              style={{
+              sx={{
                 width: "105px",
                 height: "120px",
-                maxWidth: "100%",
               }}
             />
           </Grid>
@@ -350,10 +345,11 @@ export const Game = () => {
               animation: "coins 3s infinite linear",
             }}
           >
-            <img
+            <Img
+              component="img"
               src={coinRight}
               alt=""
-              style={{ width: "85px", height: "98px", maxWidth: "100%" }}
+              sx={{ width: "85px", height: "98px" }}
             />
           </Grid>
         </Grid>
