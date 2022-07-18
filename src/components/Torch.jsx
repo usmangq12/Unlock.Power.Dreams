@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 
 export const Torch = () => {
   return (
@@ -9,7 +9,7 @@ export const Torch = () => {
           display: "flex",
           justifyContent: "center",
           position: "absolute",
-          height: "100%",
+          // height: "100%",
           bottom: { xs: "-50%", sm: "-30%" },
           width: "800px",
           height: "800px",
@@ -17,41 +17,41 @@ export const Torch = () => {
           transformOrigin: "center",
         }}
       >
-        <Grid
+        <Box
           className="demo"
           sx={{ transform: "rotate(-51.42deg)", transformOrigin: "bottom" }}
-        ></Grid>
-        <Grid
+        ></Box>
+        <Box
           className="demo"
           sx={{ transform: "rotate(-102.85deg)", transformOrigin: "bottom" }}
-        ></Grid>
-        <Grid
+        ></Box>
+        <Box
           className="demo"
           sx={{ transform: "rotate(-154.27deg)", transformOrigin: "bottom" }}
-        ></Grid>
-        <Grid
+        ></Box>
+        <Box
           className="demo"
           sx={{
             transform: "rotate(51deg)",
             transformOrigin: "bottom",
             animation: "torch 5s infinite linear",
           }}
-        ></Grid>
-        <Grid
+        ></Box>
+        <Box
           className="demo"
           sx={{ transform: "rotate(102.85deg)", transformOrigin: "bottom" }}
-        ></Grid>
-        <Grid
+        ></Box>
+        <Box
           className="demo"
           sx={{ transform: "rotate(154.27deg)", transformOrigin: "bottom" }}
-        ></Grid>
-        <Grid
+        ></Box>
+        <Box
           className="demo"
           sx={{
             transformOrigin: "bottom",
             animation: "torch1 5s infinite linear",
           }}
-        ></Grid>
+        ></Box>
       </Grid>
     </Grid>
   );
