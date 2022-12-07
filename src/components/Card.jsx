@@ -5,7 +5,6 @@ import {
   List,
   ListItem,
   Card as MuiCard,
-  Box,
 } from "@mui/material";
 import { Bulb, Plane } from "../assets/images";
 import { Img } from "../shared/Img";
