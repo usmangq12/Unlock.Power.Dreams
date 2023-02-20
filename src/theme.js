@@ -9,12 +9,6 @@ const theme = createTheme({
           background: `url(${Background})`,
           padding: 0,
           margin: 0,
-
-          //   "@media (prefers-reduced-motion: no-preference) ": {
-          //     "& .App-logo": {
-          //       animation: "App-logo-spin infinite 20s linear",
-          //     },
-          //   },
           "& .demo": {
             background:
               "linear-gradient(1.87deg,rgba(255, 229, 0, 0.5) -1.18%,rgba(255, 230, 9, 0.435) 3.33%,rgba(255, 231, 23, 0.335) 10.55%,rgba(255, 233, 36, 0.245) 17.77%,rgba(255, 234, 47, 0.17) 25.89%,rgba(255, 234, 56, 0.11) 34.01%, rgba(255, 235, 62, 0.06) 42.13%,  rgba(255, 236, 67, 0.025) 51.15%,     rgba(255, 236, 70, 0.005) 60.17%,rgba(255, 236, 71, 0) 71.89% )",
